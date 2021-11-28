@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>techpile</title>
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"/>
+
+<title>MAX-toure guider agency</title>
+  <style>
+
+    .if:hover
+    {
+      color: #1a75ff;
+      font-size:30px;
+      transition: all ease 2sec;
+    }
+    .it:hover
+    {
+      color: #00ccff;
+      font-size:30px;
+      transition: all ease 2sec;
+    }
+    .iw:hover
+    {
+      color:#99ff66;
+      font-size:30px;
+      transition: all ease 2sec;
+    }
+    .is:hover
+    {
+      color:#ff1a1a;
+      font-size:30px;
+      transition: all ease 2sec;
+
+    }
+    .ip:hover
+    {
+      color:green;
+      font-size:30px;
+      transition: all ease 2sec;
+    }
+    #menu ul li
+    {
+    font-size:15px;
+    color:black;
+
+    }
+    #menu ul li :hover
+    {
+  color:#0000ff;
+    }
+  .cardvv
+  {
+
+  }
+<!------------------------------------------footer----------------------------------------->
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("http://andreeabunget.co.uk/Img/footer.jpg");
+    background-size: cover;
+
+}
+
+
+
+.first {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+}
+
+    .first h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+        .first h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+    .first p {
+        font-size: 14px;
+    }
+
+.second {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .second h4::after {
+        content: '';
+        background: #66c83d;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+
+.second li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.second a, .second2 a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .second a:hover, .second2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+
+
+.third {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+        }
+
+
+
+    .third li {
+        list-style: none;
+        padding-bottom: 15px;
+    }
+
+
+    .third a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+
+        .third a:hover {
+            color: #fff;
+            transition: 0.2s;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+
+
+@media screen and (max-width:1000px) {
+    .first {
+        text-align: center;
+    }
+
+        .first h4::after {
+            left: 40%;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.line {
+    height:2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+}
+
+.container h1{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+<!------------------------------------end footer---------------------------------------->
+div.polo{
+width:250px;
+box-shadow:0 4px 8px 0 rgba( 0.0.0. 0.2),0
+6px 20px 0 rgba( 0.0.0.0.19);
+text-aling:center;
+
+}
+
+<!----------------------------------link------------------------------------------>
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid ">
+  <!---------------------logo---------->
+<div class="row bg-dark" style="min-height:20px;">
+  <div class="col-sm-7" style="background-color:#e6e6e6;"><span style="font-size:12px; word-spacing:10px;">
+    <i class="fa fa-volume-control-phone"></i>  Helpline No : <a>8853582905</a> | <a>888555222</a> </span>| </div>
+  <div class="col-sm-5 " style="background-color:#e6e6e6;"><span style="font-size:12px;word-spacing:10px;">
+    <i class="fa fa-envelope-o"></i>   Email : <a>vishalprajapati@gmail.com</a> | vishalprajapti0000k@gmail.com</span></div>
+</div>
+  <div class="row bg-warning" style="min-height: 60px;">
+     <div class="col-sm-3 bg-light" style="min-height: 80px;padding-top:10px;">
+       <h1 style="color:#0000ff; ">Max<span style="color:black;">Tourisms</span></h1>
+     </div>
+
+    <div class="col-sm-6 bg-light py-3 " style="min-height: 80px;">
+      <span style="color:#0000ff; font-family: initial;font-size: 30px;padding-left: 200px;">Max</span>
+      <span style="font-size: 30px; font-family: initial;">Tourisum Agency.com </span>
+    </div>
+    <div class="col-sm-3 bg-light" style="min-height: 80px;padding-left: 50px;word-spacing: 20px;">
+      <a><i class="fa fa-facebook if" style="padding-top: 20px;"></i></a>
+      <a><i class="fa fa-twitter it" style="padding-top: 30px;"></i></a>
+      <a><i class="fa fa-instagram is" style="padding-top: 30px;"></i></a>
+      <a><i class="fa fa-whatsapp iw" style="padding-top: 30px;"></i></a>
+      <a><i class="fa fa-phone ip" style="padding-top: 30px;"></i></a>
+    </div>
+
+  </div>
+
+  <!----------------------------logo end---------->
+
+
+    <!----------------------search bar-------------->
+    <div class="row"><div class="col-sm-12 bg-dark" style="min-height:10px;"></div></div>
+
+
+
+
+<!-----------------------------end searchbar------------------->
+
+
+
+      <!--------------nav bar--------------------->
+  <div class="row menu sticky-top">
+
+    <div class="col-sm-12 sticky-top">
+
+<div class="row sticky-top">
+      <div class="col-sm-2 bg-light "></div>
+      <div class="col-sm-8 bg-light " style="padding-left:120px; " id="menu">
+
+<nav class="navbar navbar-expand-lg navbar-light bg- ps-5  ">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item op">
+          <a class="nav-link active" aria-current="page" href="/user/home"><i class="fa fa-home" aria-hidden="true"></i>  Home</a>
+        </li>
+      <li class="nav-item op">
+          <a class="nav-link" href="/user/aboutus"><i class="fa fa-modx" aria-hidden="true"></i>  About Us</a>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link op" href="/user/newplaces"><i class="fa fa-map-marker" aria-hidden="true"></i>  New Places</a>
+        </li>
+        <li class="nav-item op">
+          <a class="nav-link" href="/user/contactus"><i class="fa fa-phone" aria-hidden="true"></i>  Contact Us</a>
+        </li>
+        <li class="nav-item dropdown op">
+         <a class="nav-link" href="/user/guider"><i class="fa fa-exclamation" aria-hidden="true"></i>   Guider</a>
+
+        </li>
+
+
+      <li class="nav-item op">
+        <a class="nav-link" href="/user/gallery"><i class="fa fa-picture-o" aria-hidden="true"></i>   Gallery</a>
+
+      </li>
+
+        <li class="nav-item op">
+          <a class="nav-link" href="/admin/"><i class="fa fa-sign-in" aria-hidden="true"></i>   login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </div>
+      <div class="col-sm-2 bg-light" ></div>
+</div>
+
+    </div>
+
+  </div>
+
+
+    <!-----------------------end nav bar------------------>
+
+
+
+    {% block prince %}
+    {% endblock %}
+    <!---------------------------------------------end------------------->
+    <div class="row">
+
+        <div class="col-sm-12 bg-primary" style="min-height:10px;"></div>
+
+    </div>
+    <!------------------------------- footer------------------------------->
+<div class="row">
+   <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>My Skills</h4>
+                        <p> Analytical Skills</p>
+                        <p> Problem-solving skills</p>
+                        <p> Critical-thinking skills</p>
+                        <p> Detail-oriented</p>
+                        <p> Multitasking</p>
+                        <p> Self-motivated</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> Navigate</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Contact</h4>
+                        <ul>
+                            <li>HR_ Vishal Prajapati</li>
+                            <li></li>
+
+
+                       <li ><p> <a href="https://www.facebook.com/vishal.killer.885358">vishalprajapati7781@gamil.com</a></p></li>
+                          <li ><p> <a href="https://youtube.com/channel/UCt3U-oYwExJjAx-dBz6jxcQ">YouTube Channel</a></p></li>
+
+
+                          <li><i class="fa fa-globe" aria-hidden="true"></i>   Allahabad India </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                    <div class="second2">
+                        <a href="" target="_blank"> <i class="fa fa-codepen fa-2x margin"></i></a>
+                        <a href="https://www.facebook.com/vishal.killer.885358" target="_blank"> <i class="fa fa-facebook fa-2x margin"></i></a>
+                        <a href="" target="_blank"> <i class="fa fa-whatsapp fa-2x margin"></i></a>
+                        <a href="https://youtu.be/u_vvpl5XXsE" target="_blank"><i class="fa fa-youtube fa-2x margin" ></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+    </div>
+
+</div>
+
+    <!-------------------------end--------footer------------------------------>
+
+
+
+
+
+</div>
+
+</body>
+</html>
+

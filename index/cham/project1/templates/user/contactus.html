@@ -1,0 +1,93 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<style>
+     .form-control
+    {
+    margin-bottom:8px;
+    }
+    .txta
+    {
+    min-height:8px;
+    }
+</style>
+{% block prince %}
+
+<div class="row">
+
+    <div class="col-sm-12 py-3" style="min-height:200px;background:#ffffff;">
+
+
+<h4 class="text-info">Contact Us: </h4>
+<div class="row contact" style="background:#ffffff;">
+    <div class="h2 text-center">Contact <b class="text-info"> Us <i class="fa fa-phone"></i></b></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" style="min-height:400px">
+        <div class="row">
+            <div class="col-sm-5 bg-light p-4" >
+                <form method="post">
+                    {% csrf_token %}<!-- cross site reforgery-->
+                    {% if s %}
+                    <div class="alert alert-success" >
+                        Thanks for Techpile.....
+                    </div>
+                    {% endif %}
+                    Name :<input type="text" name="name" required class="form-control" placeholder="Enter Your Name.."/>
+                    Mobile :<input type="number" name="mobile" required class="form-control" placeholder="Enter Your Mobile Number.."/>
+                    Email :<input type="email" name="email" required class="form-control" placeholder="Enter Your Email.."/>
+                    Message :
+                    <textarea class="form-control" name="msg" style="min-height:80px;resize:none" placeholder="Enter Your Message.." required></textarea>
+                    <input type="submit" value="Save" class="btn btn-info" style="margin-top:10px;"/>
+                </form>
+            </div>
+            <div class="col-sm-7 " style=" ">
+       <img src="{% static 'images/contact.jpg' %}" class="img-thumbnail" style="height:380px;width:644px;"/>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+</div>
+
+    </div>
+</div>
+<div class="row">
+    <h3> Contact us</h3>
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<p style="text-align:justify;font-size:13px;">This is the Official Portal of the Government
+    of India designed, developed and hosted by <span style="color:blue;">National Informatics
+        Centre (NIC), Ministry of Electronics & Information
+        Technology.
+
+    </span>
+
+The objective behind the Portal is to provide a single window access to the information
+    and services being provided by the Indian Government for citizens and other stakeholders.
+    The content of this Portal is managed centrally by the National Portal Content Management Team from the National Portal Secretariat.
+
+Any feedback, related to content, design, or technology with respect to the National Portal
+    of India (NPI) may be submitted at
+    Feedback section or to the Web Information Manager at the address below.</p>
+
+    <p style="color:red;">Address:</p>
+<div class="row" style="text-decoration:none;">
+    <li>HR Vishal prajapati</li>
+    <li>Web Information Developer</li>
+    <li>Feroze Gandhi Polytechnic</li>
+    <li>New jhunsi Allahabad</li>
+    <li>Email: vishalprajapati@gmail.com[dot]in</li>
+    <li>Phone: 8853582905</li></div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461320.
+            3815755571!2d81.52136488562236!3d25.402618627964536!2m3!1f0!2f0!3f0!3m2!1i1
+            024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj
+            %2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1633316483620!5m2!1sen!2sin" width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+ {% extends 'base.html' %}
+
+{% load static %}
+
+{% block prince %}
+
+
+<div class="row">
+    <div class="col-sm-12 " style="min-height:300px;">
+        <div class="row">
+            <div class=" h3 text-center pt-3"> Image Gallery</div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 py-3 ">
+                <div class="row">
+                    {% if gallery %}
+                    {% for x in gallery %}
+                    <div class="col-sm-2">
+                        <div class="card ">
+                            <img src="/{{x.picture}}" class="img-thumbanil" class="card-img-top" alt=".."
+                                 style="height:250px; width:400px;"/>
+
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

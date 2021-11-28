@@ -1,0 +1,67 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block prince%}
+
+<div class="row">
+    <div class="col-sm-12" style="min-height:200px;background:#ffffff;">
+
+
+<div class="text-center mt-5"><h3>New Places<spn>-Discription</spn></h3></div>
+
+<div class="row mt-5">
+<div class="col-sm-1"></div>
+<div class="col-sm-10">
+  <div class="row">
+
+    <div class="col-sm-3">
+      <ul class="list-group">
+  <li class="list-group-item active" aria-current="true">City</li>
+          {% if city %}
+          {% for x in city %}
+  <a href="/user/newplaces?abc={{x.id}}" style="text-decoration:none;"><li class="list-group-item">{{x.cname}}</li></a>
+          {% endfor %}
+          {% endif %}
+         <a href="/user/newplaces?" style="text-decoration:none;"><li class="list-group-item">All Data</li></a>
+
+</ul>
+
+    </div>
+    <div class="col-sm-9">
+        {% if place %}
+        {% for x in place %}
+        <div class="card mb-3 bg-light" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/{{x.placepic}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">{{x.ptitle}}</h4>
+        <b>{{x.bplace}}</b>
+        <p class="card-text">{{x.pdes}}</p>
+        <p class="card-text"><small class="text-muted">
+            <i class="btn btn-warning">{{x.pdate}}</i>
+            <i class="btn btn-warning">{{x.city}}</i>
+
+        </small></p>
+          <a href="/user/viewdetails?msg={{x.id}}"class="btn btn-warning">view more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+        {% endfor %}
+        {% endif %}
+    </div>
+
+  </div>
+
+</div>
+<div class="col-sm-1"></div>
+</div>
+
+
+    </div>
+</div>
+
+{% endblock %}

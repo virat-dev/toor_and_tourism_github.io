@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block prince %}
+<div class="row">
+    <div class="h2 text-center<i"> video Gallery</div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="row">
+            <!----- video------>
+            {% if video %}
+            {% for x in video %}
+            <div class="col-sm-4">
+                <div class="card">
+                    <iframe  class="card-img-top w-100%" src="{{x.vlink}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div class="card-body">
+    <h5 class="card-title">{{x.vtitle}}</h5>
+    <p class="card-text">{{x.vdes}}</p>
+
+  </div>
+</div>
+
+            </div>
+            {%endfor%}
+            {%endif%}
+            <!---------end video---->
+
+
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+{% endblock %}

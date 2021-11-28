@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block prince %}
+
+<div class="row">
+    <div class="col-sm-12 " style="background:#ffffff;">
+
+        <!-------start------>
+        <div class="row">
+
+    <div class="col-sm-4  "></div>
+    <div class="col-sm-4 p-4 " style="background:#009688;">
+        <form method="POST" autocomplete="off" enctype="multipart/from-data">
+            {% csrf_token %}
+
+             Name<input type="text" name="name" required class="form-control" placeholder="Enter Your Name.."/>
+                    Mobile<input type="number" name="mobile" required class="form-control" placeholder="Enter Your Mobile Number.."/>
+                    Email<input type="email" name="email" required class="form-control" placeholder="Enter Your Email.."/>
+                    Password<input type="password" name="passwd" required class="form-control" placeholder="Enter your password.."/>
+                    Profile pitchure<input type="file" name="fu" required class="form-control"/>
+                    Address
+                    <textarea class="form-control" name="address" style="min-height:80px;resize:none" placeholder="Enter Your Message.." required></textarea>
+                    <input type="submit" value="Save" class="btn btn-warning"/>
+
+        </form>
+    </div>
+    <div class="col-sm-4 "></div>
+    </div>
+        <!-------end------>
+
+    </div>
+</div>
+{% endblock %}
